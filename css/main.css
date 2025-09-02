@@ -173,20 +173,25 @@ header nav ul li a:hover::after {
     헤더가 fixed 되어 일반 배치 흐름에서 벗어남(주변 요소들과 상호작용하지 않음)
     fixed 헤더 다음에 오는 섹션은 헤더의 높이만큼 외부 여백 추가 필요
   */
+  background-image: url('../images/backP.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-top: 60px;
   width: 100%;
-  background-color: #000;
-  color: #fff;
 }
 .visual > .inner {
   height: calc(100vh - 60px);
-  font-size: 70px;
+  font-size: 50px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  color: white;
 }
-.visual > .inner .purple {
+/* .visual > .inner .purple {
   color: #9b30ff;
-}
+} */
 
 /* ABOUT */
 .about {
@@ -480,10 +485,10 @@ footer .copyright {
 
 /* SCROLL TO TOP */
 #toTop {
-  width: 42px;
-  height: 42px;
-  background-color: #fff8e8;
-  border: 2px solid #333;
+  width: 50px;
+  height: 50px;
+  background-color: plum;
+  border: 4px solid black;
   border-radius: 10px;
   cursor: pointer;
 
@@ -504,9 +509,29 @@ footer .copyright {
   /* 수직 정렬 맞추기 */
   /* display: block; */
   /* 또는 글자 요소의 수직 정렬 */
-  line-height: 42px;
+  line-height: 50px;
 }
 
+#sideBar {
+  width: 70px;
+  height: 150px;
+  background-color: rgba(120, 120, 230, 0.5);
+  border: 5px solid black;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  bottom: 50vh;
+  z-index: 99;
+}
+
+#sideBar img {
+  width: 60px;
+}
 
 
 
