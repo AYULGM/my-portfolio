@@ -117,6 +117,7 @@ img {
 /* HEADER */
 header {
   background-color: #fff;
+  background-color: #333;
   border-bottom: 1px solid #c8c8c8;
   box-shadow: 0 2px 8px rgba(204, 204, 204, 0.8);
 
@@ -147,6 +148,8 @@ header nav ul li {
 }
 header nav ul li a {
   position: relative;
+  color: #e0c4fa;
+  border-top: 2px solid #e0c4fa;
 }
 header nav ul li a:hover {
   color: #9b30ff;
@@ -173,22 +176,36 @@ header nav ul li a:hover::after {
     헤더가 fixed 되어 일반 배치 흐름에서 벗어남(주변 요소들과 상호작용하지 않음)
     fixed 헤더 다음에 오는 섹션은 헤더의 높이만큼 외부 여백 추가 필요
   */
-  background-image: url('../images/backP.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(43, 64, 94);
   margin-top: 60px;
   width: 100%;
 }
 .visual > .inner {
   height: calc(100vh - 60px);
-  font-size: 50px;
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   color: white;
 }
+.visual > .inner .visual__img {
+  width: 20%;
+}
+.visual > .inner .visual__img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.visual > .inner .font-en p:first-child {
+  font-size: 50px;
+}
+.visual > .inner .font-en p:last-child {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
 /* .visual > .inner .purple {
   color: #9b30ff;
 } */
@@ -513,8 +530,8 @@ footer .copyright {
 }
 
 #sideBar {
-  width: 70px;
-  height: 150px;
+  width: 80px;
+  height: 170px;
   background-color: rgba(120, 120, 230, 0.5);
   border: 5px solid black;
   border-radius: 20px;
@@ -525,7 +542,7 @@ footer .copyright {
   align-items: center;
   position: fixed;
   right: 30px;
-  bottom: 50vh;
+  bottom: 40vh;
   z-index: 99;
 }
 
